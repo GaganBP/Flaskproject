@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My College - Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+  
+  <header>
+    <h1>My College</h1>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="{{ url_for('home_page') }}">Home</a></li>
+        <li><a href="{{ url_for('department_page') }}">Departments</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <section id="home">
+      <!-- Add the image here, on top of the Welcome section -->
+      <img src="static/images/college.jpg">
+      <h2>Welcome to My College</h2>
+      <p>My College is one of the top 10 engineering colleges in Mysore, Karnataka. Affiliated to VTU Mysore, our college was founded in 1997 and has now grown rapidly into one of the best engineering colleges in Karnataka. Our courses include BE., MBA, and MCA. Counted as one of the top Engineering colleges in Karnataka for its placement opportunities, we cater to 3000 students and staff members in an environment that is rich in cultural and linguistic diversity.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>My College (M.C.) was started in 1997, in pursuit of developing science & technology through teaching, research and development. We deliver best-quality education and training to mould the technophiles into highly professional world-class engineers.</p>
+      <p>M.C. is recognized by the Government of Karnataka as well as the All India Council of Technical Education (AICTE), New Delhi, affiliated to the Visvesvaraya Technological University (VTU), Belgaum and governed by Educational Trust®.</p>
+    </section>
+
+    <section id="vision-mission">
+      <h2>Vision and Mission</h2>
+      <h3>Vision</h3>
+      <p>Our vision is to provide learning opportunities, ensuring excellence in education, research and facilitate an inspiring world-class environment to encourage creativity. The Institute is committed to disseminating knowledge, and through its ingenuity, bring this knowledge to bear on the world's great challenges. M.C. is dedicated to providing its students with an education that combines academic study and the excitement of discovery kindled by a diverse campus community.</p>
+
+      <h3>Mission</h3>
+      <p>To offer highest Professional and Academic Standards in terms of Personal growth and satisfaction.</p>
+      <p>To provide students a platform where independent learning and scientific study are encouraged with emphasis on latest engineering techniques.</p>
+      <p>To encourage students to implement applications of Engineering with a focus on societal needs for the betterment of communities.</p>
+      <p>To empower students with vast technical and life skills to raise their stakes of getting placements in top reputed companies.</p>
+      <p>To create a benchmark in the areas of Research, Education and Public Outreach.</p>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2023 My College. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

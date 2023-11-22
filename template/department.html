@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My College - Departments</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1em;
+        position: relative;
+        z-index: 1;
+      }
+
+      nav {
+        background-color: #444;
+        padding: 10px;
+        position: relative;
+        z-index: 1;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      nav ul li a:hover {
+        background-color: #555;
+      }
+
+      section {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1em;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 1;
+      }
+
+      .department {
+        background-color: #fff;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        position: relative;
+        z-index: 1;
+      }
+
+      .department:hover {
+        transform: scale(1.05);
+      }
+
+     
+          </style>
+</head>
+<body>
+
+  <header>
+    <h1>Department of MCA</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="{{ url_for('home_page') }}">Home</a></li>
+      <li><a href="{{ url_for('department_page') }}">Departments</a></li>
+    </ul>
+  </nav>
+
+  <section id="departments">
+    <h2>Departments</h2>
+
+    <!-- Computer Science Department -->
+    <div class="department">
+      <h3>Computer Science</h3>
+      <p>The Computer Science department at My College offers cutting-edge courses and research opportunities. Students delve into areas such as algorithms, artificial intelligence, and software development.</p>
+    </div>
+
+    <!-- Engineering Department -->
+    <div class="department">
+      <h3>Engineering</h3>
+      <p>The Engineering department is committed to fostering innovation and excellence in the field. With state-of-the-art labs and experienced faculty, students receive hands-on training in various engineering disciplines.</p>
+    </div>
+
+    <!-- MCA Department -->
+    <div class="department">
+      <h3>Master of Computer Application (MCA)</h3>
+      <p>The MCA department at My College was started in the year 1998 with a vision of creating tomorrow’s IT leaders. The programme is aimed at equipping students from varied backgrounds aspiring to seek a career in the field of Information Technology, with a sound foundation in computer applications.</p>
+      <p>The MCA graduates will be competent professional practitioners and can suitably occupy positions in top IT companies in profiles such as System Analyst, System Designers, Software Engineers, and Application Programmers etc.</p>
+      <p>Here students learn the subjects both in technical & theoretical aspects which provide them sound knowledge. Students are encouraged to learn the latest technical aspects and to implement their ideas in their projects. In the final semester, the university recommends industrial training for the students, which gives them hands-on experience.</p>
+      <p>The Department has a student association called “OpenNode” which gives them an opportunity to discover their skills. Under the association, students conduct an annual technical fest “Techvision” which provides a solid foundation for the growth of the students and the institution. The event strives to make a mark in enriching the personality of its students in overall development. The student Association also releases an annual magazine called “Technocks” which serves as a platform for students to exchange their ideas and share the latest technology news.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2023 My College. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

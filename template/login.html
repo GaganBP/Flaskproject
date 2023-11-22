@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+  <style>
+    body {
+      background-image: url('{{ url_for("static", filename="images/lap.jpg") }}');
+      /* Adjust background properties as needed */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="form-box login">
+    <h2>Login</h2>
+    <form id="loginForm" action="#" method="post">
+      <!-- Your login form fields here -->
+      <div class="input-box">
+        <span class="icon"><ion-icon name="person"></ion-icon></span>
+        <input type="text" id="username" name="username" required>
+        <label>Username</label>
+      </div>
+      <div class="input-box">
+        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+        <input type="password" id="password" name="password" required>
+        <label>Password</label>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <div class="login-register">
+        <p>Don't have an account?<a href="{{ url_for('signup_page') }}" class="register-link">Register</a></p>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
+</body>
+</html>
